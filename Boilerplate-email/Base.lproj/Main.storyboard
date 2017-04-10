@@ -17,10 +17,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Email View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Boilerplate_email" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="EmailViewController" customModule="Boilerplate_email" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -30,13 +30,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5q-Xb-PKd">
-                                <rect key="frame" x="20" y="40" width="335" height="50"/>
+                                <rect key="frame" x="20" y="60" width="335" height="50"/>
                                 <fontDescription key="fontDescription" name="GalanoGrotesque-SemiBold" family="Galano Grotesque" pointSize="37"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="wOI-MD-KWA" customClass="BorderLessTextField" customModule="Boilerplate_auth" customModuleProvider="target">
-                                <rect key="frame" x="20" y="140" width="335" height="60"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="wOI-MD-KWA" customClass="BorderLessTextField" customModule="Boilerplate_email" customModuleProvider="target">
+                                <rect key="frame" x="20" y="160" width="335" height="60"/>
                                 <color key="backgroundColor" red="0.054901960780000002" green="0.074509803920000006" blue="0.1019607843" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="1fD-jp-7ih"/>
@@ -45,8 +45,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6DO-Fo-pUh" customClass="BorderLessTextField" customModule="Boilerplate_auth" customModuleProvider="target">
-                                <rect key="frame" x="20" y="250" width="335" height="60"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6DO-Fo-pUh" customClass="BorderLessTextField" customModule="Boilerplate_email" customModuleProvider="target">
+                                <rect key="frame" x="20" y="270" width="335" height="60"/>
                                 <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Od7-Nm-xK5"/>
@@ -58,8 +58,8 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isPasswordField" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="loS-fl-pvJ" customClass="BorderLessTextField" customModule="Boilerplate_auth" customModuleProvider="target">
-                                <rect key="frame" x="20" y="360" width="335" height="60"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="loS-fl-pvJ" customClass="BorderLessTextField" customModule="Boilerplate_email" customModuleProvider="target">
+                                <rect key="frame" x="20" y="380" width="335" height="60"/>
                                 <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Xfg-lv-AzB"/>
@@ -72,7 +72,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIb-MZ-DNH">
-                                <rect key="frame" x="20" y="111" width="58" height="21"/>
+                                <rect key="frame" x="20" y="131" width="58" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="0yD-AE-MIC"/>
                                     <constraint firstAttribute="width" constant="58" id="WEN-qm-gLa"/>
@@ -82,7 +82,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7v-H7-rGX">
-                                <rect key="frame" x="20" y="221" width="58" height="21"/>
+                                <rect key="frame" x="20" y="241" width="58" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="NJx-0s-dJ4"/>
                                     <constraint firstAttribute="width" constant="58" id="h23-kG-HZd"/>
@@ -92,7 +92,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sN0-89-v9t">
-                                <rect key="frame" x="20" y="329" width="64" height="23"/>
+                                <rect key="frame" x="20" y="349" width="64" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="8XF-qz-jaV"/>
                                     <constraint firstAttribute="width" constant="64" id="FTB-By-fjk"/>
@@ -102,7 +102,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gva-UZ-q1m" customClass="WeColorButton" customModule="Boilerplate_email" customModuleProvider="target">
-                                <rect key="frame" x="20" y="460" width="335" height="60"/>
+                                <rect key="frame" x="20" y="480" width="335" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="wgP-ry-Ld6"/>
                                 </constraints>
@@ -110,6 +110,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="darkButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="submitButtonClick" destination="BYZ-38-t0r" eventType="touchUpInside" id="QJl-zu-FMH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -135,10 +138,15 @@
                             <constraint firstItem="T5q-Xb-PKd" firstAttribute="leading" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="f3W-Lg-RSt"/>
                             <constraint firstItem="loS-fl-pvJ" firstAttribute="top" secondItem="sN0-89-v9t" secondAttribute="bottom" constant="8" id="iUB-aU-ctu"/>
                             <constraint firstItem="loS-fl-pvJ" firstAttribute="trailing" secondItem="6DO-Fo-pUh" secondAttribute="trailing" id="kKF-lN-uBW"/>
-                            <constraint firstItem="T5q-Xb-PKd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="mpt-dw-SYZ"/>
+                            <constraint firstItem="T5q-Xb-PKd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="mpt-dw-SYZ"/>
                             <constraint firstItem="wOI-MD-KWA" firstAttribute="top" secondItem="T5q-Xb-PKd" secondAttribute="bottom" constant="50" id="xNY-13-8gy"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fromTextField" destination="6DO-Fo-pUh" id="D1M-NA-OQd"/>
+                        <outlet property="subjectTextField" destination="loS-fl-pvJ" id="nMe-FS-Tto"/>
+                        <outlet property="toTextField" destination="wOI-MD-KWA" id="NHt-d5-axB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

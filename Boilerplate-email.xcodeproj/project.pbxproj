@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		57ED48031E9B8FB400B4D097 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ED48021E9B8FB400B4D097 /* AppDelegate.swift */; };
-		57ED48051E9B8FB400B4D097 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ED48041E9B8FB400B4D097 /* ViewController.swift */; };
+		57ED48051E9B8FB400B4D097 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ED48041E9B8FB400B4D097 /* EmailViewController.swift */; };
 		57ED48081E9B8FB400B4D097 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57ED48061E9B8FB400B4D097 /* Main.storyboard */; };
 		57ED480A1E9B8FB400B4D097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57ED48091E9B8FB400B4D097 /* Assets.xcassets */; };
 		57ED480D1E9B8FB400B4D097 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57ED480B1E9B8FB400B4D097 /* LaunchScreen.storyboard */; };
@@ -29,7 +29,7 @@
 		1B9F97177F1A75052255540F /* Pods_Boilerplate_email.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Boilerplate_email.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57ED47FF1E9B8FB400B4D097 /* Boilerplate-email.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Boilerplate-email.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57ED48021E9B8FB400B4D097 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		57ED48041E9B8FB400B4D097 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		57ED48041E9B8FB400B4D097 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		57ED48071E9B8FB400B4D097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57ED48091E9B8FB400B4D097 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57ED480C1E9B8FB400B4D097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 				57ED48201E9B90F200B4D097 /* Views */,
 				57ED48141E9B903200B4D097 /* Resources */,
 				57ED48021E9B8FB400B4D097 /* AppDelegate.swift */,
-				57ED48041E9B8FB400B4D097 /* ViewController.swift */,
+				57ED48041E9B8FB400B4D097 /* EmailViewController.swift */,
 				57ED48061E9B8FB400B4D097 /* Main.storyboard */,
 				57ED48091E9B8FB400B4D097 /* Assets.xcassets */,
 				57ED480B1E9B8FB400B4D097 /* LaunchScreen.storyboard */,
@@ -270,7 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57ED48051E9B8FB400B4D097 /* ViewController.swift in Sources */,
+				57ED48051E9B8FB400B4D097 /* EmailViewController.swift in Sources */,
 				57ED48281E9B912500B4D097 /* WeTextField.swift in Sources */,
 				57ED48031E9B8FB400B4D097 /* AppDelegate.swift in Sources */,
 				57ED48261E9B911700B4D097 /* WeFonts.swift in Sources */,
