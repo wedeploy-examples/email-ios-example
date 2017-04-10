@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="rene_bieder_galano_grotesque_medium.otf">
+            <string>GalanoGrotesque-Medium</string>
+        </array>
+        <array key="rene_bieder_galano_grotesque_semibold.otf">
+            <string>GalanoGrotesque-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Boilerplate_email" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5q-Xb-PKd">
+                                <rect key="frame" x="20" y="40" width="335" height="50"/>
+                                <fontDescription key="fontDescription" name="GalanoGrotesque-SemiBold" family="Galano Grotesque" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="wOI-MD-KWA" customClass="BorderLessTextField" customModule="Boilerplate_auth" customModuleProvider="target">
+                                <rect key="frame" x="20" y="140" width="335" height="60"/>
+                                <color key="backgroundColor" red="0.054901960780000002" green="0.074509803920000006" blue="0.1019607843" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="1fD-jp-7ih"/>
+                                </constraints>
+                                <color key="textColor" red="0.89411764709999997" green="0.2784313725" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6DO-Fo-pUh" customClass="BorderLessTextField" customModule="Boilerplate_auth" customModuleProvider="target">
+                                <rect key="frame" x="20" y="250" width="335" height="60"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Od7-Nm-xK5"/>
+                                </constraints>
+                                <color key="textColor" red="0.89411764709999997" green="0.2784313725" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isPasswordField" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="loS-fl-pvJ" customClass="BorderLessTextField" customModule="Boilerplate_auth" customModuleProvider="target">
+                                <rect key="frame" x="20" y="360" width="335" height="60"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Xfg-lv-AzB"/>
+                                </constraints>
+                                <color key="textColor" red="0.89411764709999997" green="0.2784313725" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isPasswordField" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIb-MZ-DNH">
+                                <rect key="frame" x="20" y="111" width="58" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="0yD-AE-MIC"/>
+                                    <constraint firstAttribute="width" constant="58" id="WEN-qm-gLa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GalanoGrotesque-Medium" family="Galano Grotesque" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7v-H7-rGX">
+                                <rect key="frame" x="20" y="221" width="58" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="NJx-0s-dJ4"/>
+                                    <constraint firstAttribute="width" constant="58" id="h23-kG-HZd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GalanoGrotesque-Medium" family="Galano Grotesque" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sN0-89-v9t">
+                                <rect key="frame" x="20" y="329" width="64" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="8XF-qz-jaV"/>
+                                    <constraint firstAttribute="width" constant="64" id="FTB-By-fjk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GalanoGrotesque-Medium" family="Galano Grotesque" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gva-UZ-q1m" customClass="WeColorButton" customModule="Boilerplate_email" customModuleProvider="target">
+                                <rect key="frame" x="20" y="460" width="335" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="wgP-ry-Ld6"/>
+                                </constraints>
+                                <state key="normal" title="Submit"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="darkButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6DO-Fo-pUh" firstAttribute="top" secondItem="Z7v-H7-rGX" secondAttribute="bottom" constant="8" id="9qN-KQ-jlG"/>
+                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="wOI-MD-KWA" secondAttribute="trailing" constant="20" id="Emf-0G-Qgg"/>
+                            <constraint firstItem="T5q-Xb-PKd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FrU-g3-Hnz"/>
+                            <constraint firstItem="wOI-MD-KWA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HnV-HG-nhE"/>
+                            <constraint firstItem="sN0-89-v9t" firstAttribute="leading" secondItem="loS-fl-pvJ" secondAttribute="leading" id="INr-of-taW"/>
+                            <constraint firstItem="6DO-Fo-pUh" firstAttribute="top" secondItem="wOI-MD-KWA" secondAttribute="bottom" constant="50" id="KGW-UF-d8m"/>
+                            <constraint firstItem="wOI-MD-KWA" firstAttribute="leading" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="KkM-pq-WjX"/>
+                            <constraint firstItem="Gva-UZ-q1m" firstAttribute="trailing" secondItem="wOI-MD-KWA" secondAttribute="trailing" id="LnQ-1L-rxB"/>
+                            <constraint firstItem="Gva-UZ-q1m" firstAttribute="leading" secondItem="wOI-MD-KWA" secondAttribute="leading" id="QRi-At-xOR"/>
+                            <constraint firstItem="6DO-Fo-pUh" firstAttribute="trailing" secondItem="wOI-MD-KWA" secondAttribute="trailing" id="SYn-pB-27u"/>
+                            <constraint firstItem="wOI-MD-KWA" firstAttribute="top" secondItem="CIb-MZ-DNH" secondAttribute="bottom" constant="8" id="Sav-aj-ew5"/>
+                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="T5q-Xb-PKd" secondAttribute="trailing" constant="20" id="SjF-f0-YSf"/>
+                            <constraint firstItem="6DO-Fo-pUh" firstAttribute="leading" secondItem="wOI-MD-KWA" secondAttribute="leading" id="T9T-nb-TEF"/>
+                            <constraint firstItem="loS-fl-pvJ" firstAttribute="leading" secondItem="6DO-Fo-pUh" secondAttribute="leading" id="TbV-kZ-oPm"/>
+                            <constraint firstItem="Z7v-H7-rGX" firstAttribute="leading" secondItem="6DO-Fo-pUh" secondAttribute="leading" id="Wz5-tE-8y5"/>
+                            <constraint firstItem="CIb-MZ-DNH" firstAttribute="leading" secondItem="wOI-MD-KWA" secondAttribute="leading" id="Zd6-0V-aS2"/>
+                            <constraint firstItem="loS-fl-pvJ" firstAttribute="top" secondItem="6DO-Fo-pUh" secondAttribute="bottom" constant="50" id="aZg-Kv-jlf"/>
+                            <constraint firstItem="Gva-UZ-q1m" firstAttribute="top" secondItem="loS-fl-pvJ" secondAttribute="bottom" constant="40" id="dLN-ud-edR"/>
+                            <constraint firstItem="T5q-Xb-PKd" firstAttribute="leading" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="f3W-Lg-RSt"/>
+                            <constraint firstItem="loS-fl-pvJ" firstAttribute="top" secondItem="sN0-89-v9t" secondAttribute="bottom" constant="8" id="iUB-aU-ctu"/>
+                            <constraint firstItem="loS-fl-pvJ" firstAttribute="trailing" secondItem="6DO-Fo-pUh" secondAttribute="trailing" id="kKF-lN-uBW"/>
+                            <constraint firstItem="T5q-Xb-PKd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="mpt-dw-SYZ"/>
+                            <constraint firstItem="wOI-MD-KWA" firstAttribute="top" secondItem="T5q-Xb-PKd" secondAttribute="bottom" constant="50" id="xNY-13-8gy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-76" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
