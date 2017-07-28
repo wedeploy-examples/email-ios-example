@@ -30,8 +30,8 @@ class EmailViewController: UIViewController {
 			return
 		}
 		
-		let auth = TokenAuth(token: "49488085-1ee3-4c33-888f-0a1e37d2694e")
-		WeDeploy.email("http://email.boilerplate-email.wedeploy.io", authorization: auth)
+		let auth = TokenAuth(token: "5732bed5-1418-4b21-b524-5533f2d0bc2c")
+		WeDeploy.email("https://email-boilerplateemail.wedeploy.sh", authorization: auth)
 			.to(to)
 			.from(from)
 			.subject(subject)
