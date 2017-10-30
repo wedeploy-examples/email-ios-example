@@ -30,8 +30,8 @@ class EmailViewController: UIViewController {
 			return
 		}
 		
-		let auth = TokenAuth(token: "5732bed5-1418-4b21-b524-5533f2d0bc2c")
-		WeDeploy.email("https://email-boilerplateemail.wedeploy.sh", authorization: auth)
+		let auth = TokenAuth(token: "073e93d6-7dcc-4df5-9a18-9dd121b92f50")
+		WeDeploy.email("https://email-boilerplateemail.wedeploy.io", authorization: auth)
 			.to(to)
 			.from(from)
 			.subject(subject)
@@ -49,7 +49,7 @@ class EmailViewController: UIViewController {
 			}
 	}
 	
-	func handleScreenTap() {
+	@objc func handleScreenTap() {
 		view.endEditing(true)
 	}
 	
