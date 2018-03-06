@@ -17,47 +17,47 @@ import UIKit
 
 class WeColorButton: UIButton {
 
-	@IBInspectable open var darkButton: Bool = false
-	@IBInspectable open var textSize: Int = 16
-	@IBInspectable open var cornerRadius: Int = 4
+  @IBInspectable open var darkButton: Bool = false
+  @IBInspectable open var textSize: Int = 16
+  @IBInspectable open var cornerRadius: Int = 4
 
-	override var isEnabled: Bool {
-		didSet {
-			alpha = isEnabled ? 1 : 0.6
-		}
-	}
+  override var isEnabled: Bool {
+    didSet {
+      alpha = isEnabled ? 1 : 0.6
+    }
+  }
 
-	override init(frame: CGRect) {
-		super.init(frame: frame)
-		initialize()
-	}
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+    initialize()
+  }
 
-	required init?(coder aDecoder: NSCoder) {
-		super.init(coder: aDecoder)
-	}
+  required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+  }
 
-	override func awakeFromNib() {
-		super.awakeFromNib()
+  override func awakeFromNib() {
+    super.awakeFromNib()
 
-		initialize()
-	}
+    initialize()
+  }
 
-	func initialize() {
+  func initialize() {
 
-		layer.cornerRadius = CGFloat(cornerRadius)
-		setTitleColor(.white, for: .disabled)
-		alpha = isEnabled ? 1 : 0.6
+    layer.cornerRadius = CGFloat(cornerRadius)
+    setTitleColor(.white, for: .disabled)
+    alpha = isEnabled ? 1 : 0.6
 
-		titleLabel?.font = UIFont.boldWeFont(ofSize: CGFloat(textSize))
+    titleLabel?.font = UIFont.boldWeFont(ofSize: CGFloat(textSize))
 
-		if darkButton {
-			setTitleColor(.white, for: .normal)
-			backgroundColor = .mainColor
-		}
-		else {
-			setTitleColor(.mainColor, for: .normal)
-			backgroundColor = .white
-		}
-	}
+    if darkButton {
+      setTitleColor(.white, for: .normal)
+      backgroundColor = .mainColor
+    }
+    else {
+      setTitleColor(.mainColor, for: .normal)
+      backgroundColor = .white
+    }
+  }
 
 }
