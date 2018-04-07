@@ -9,6 +9,9 @@
 import UIKit
 import WeDeploy
 
+let emailUrl = "https://email-emailweb.wedeploy.io"
+let masterToken = "<master-token>"
+
 class EmailViewController: UIViewController {
 
   @IBOutlet weak var toTextField: BorderLessTextField!
@@ -30,8 +33,8 @@ class EmailViewController: UIViewController {
       return
     }
     
-    let auth = TokenAuth(token: "073e93d6-7dcc-4df5-9a18-9dd121b92f50")
-    WeDeploy.email("https://email-boilerplateemail.wedeploy.io", authorization: auth)
+    let auth = TokenAuth(token: masterToken)
+    WeDeploy.email(emailUrl, authorization: auth)
       .to(to)
       .from(from)
       .subject(subject)
